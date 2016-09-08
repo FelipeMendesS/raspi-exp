@@ -1,0 +1,6 @@
+[Unit]
+Description= Automatic SSH tunnel
+
+[Service]
+ExecStart=/usr/bin/ssh :q
+
