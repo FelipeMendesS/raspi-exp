@@ -1,0 +1,6 @@
+https://francispereira.com/alway-connected-ssh-reverse-port-forwarding-with-systemd.html
+https://news.ycombinator.com/item?id=10538689
+https://www.freedesktop.org/software/systemd/man/systemd.service.html - Service options
+https://www.freedesktop.org/software/systemd/man/systemd.unit.html# - Unit and Install options
+https://www.freedesktop.org/software/systemd/man/systemd.special.html - Some default targets
+http://superuser.com/questions/728951/systemd-giving-my-service-multiple-arguments - How to add arguments later
