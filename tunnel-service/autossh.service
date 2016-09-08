@@ -1,0 +1,12 @@
+[Unit]
+Description=Automatic SSH tunnel keep alive
+After=network-online.target
+Requires=network-online.target
+
+[Service]
+# Improve it so we check for the current public ip and if we really want to connect
+ExecStart=/usr/bin/ssh -R 2210:localhost:22 pi@24.130.150.105
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
