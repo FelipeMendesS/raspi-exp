@@ -2,11 +2,15 @@
 Description=Automatic SSH tunnel keep alive
 After=network-online.target
 Requires=network-online.target
+DefaultDependencies=no
 
 [Service]
+User=pi
+
 # Improve it so we check for the current public ip and if we really want to connect
-ExecStart=/usr/bin/ssh -R 2210:localhost:22 pi@24.130.150.105
+ExecStart=/usr/bin/ssh -o ExitOnForwardFailure=yes -o ServerAliveInterval=20 -N -T -R 2210:localhost:22 pi@24.130.150.105
 Restart=on-failure
+RestartSec=5
 
 [Install]
 WantedBy=multi-user.target
