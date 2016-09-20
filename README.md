@@ -28,9 +28,10 @@ Runs in background, checking a server. If the server indicates "GO", then pingua
 
 ## Ideas
 
-- Establish a shared channel. Files copied inside a folder will automatically be copied to the same folder in the other device (dumbed-down dropbox :) ).
+- Establish a shared channel. Files copied inside a folder will automatically be copied to the same folder in the other device (dumbed-down dropbox :) ). (Potential solution: https://www.digitalocean.com/community/tutorials/how-to-use-sshfs-to-mount-remote-file-systems-over-ssh )
 - Use that channel to send images. 
 - Maybe even a stream coming from pinguas' camera? 
+-Some idea that involves software development?
 
 [port-forwarding]: http://blog.trackets.com/2014/05/17/ssh-tunnel-local-and-remote-port-forwarding-explained-with-examples.html
 [reverse-ssh]: https://toic.org/blog/2009/reverse-ssh-port-forwarding/
